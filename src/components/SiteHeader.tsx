@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import { Logo, LogoMark } from "@/components/Logo";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Button } from "@/components/ui/button";
-import { Briefcase } from "lucide-react";
+import { Briefcase, BookOpen } from "lucide-react";
 
 const ZAPRITE_URL = "https://pay.zaprite.com/pl_1hOGF8dgST";
 
@@ -13,6 +14,12 @@ export function SiteHeader() {
         <div className="container mx-auto flex items-center justify-between px-4 py-3">
           <Logo />
           <div className="flex items-center gap-2 sm:gap-3">
+            <Button asChild variant="ghost" size="sm" className="font-medium">
+              <Link to="/how-to-buy-bitcoin">
+                <BookOpen className="h-4 w-4" />
+                <span className="hidden sm:inline">Beginner Guide</span>
+              </Link>
+            </Button>
             <Button asChild size="sm" className="font-semibold">
               <a href={ZAPRITE_URL} target="_blank" rel="noopener noreferrer">
                 <Briefcase className="h-4 w-4" />
