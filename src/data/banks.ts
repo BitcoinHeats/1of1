@@ -14,6 +14,7 @@ export interface Bank {
     selfCustodyFriendly: boolean; // Lets you send to your own wallet / exchange without freezing
     lightning: boolean; // Lightning network support
     debitCard: boolean; // Bitcoin-linked card
+    mortgage: boolean; // Bitcoin-backed mortgage / lending product
     noKYCHassle: boolean; // Smooth onboarding
   };
   bestFor: string;
@@ -41,6 +42,7 @@ export const banks: Bank[] = [
       selfCustodyFriendly: true,
       lightning: true,
       debitCard: true,
+      mortgage: false,
       noKYCHassle: true,
     },
     bestFor: "Merchants and businesses getting started with Bitcoin",
@@ -60,6 +62,7 @@ export const banks: Bank[] = [
       selfCustodyFriendly: true,
       lightning: true,
       debitCard: true,
+      mortgage: false,
       noKYCHassle: true,
     },
     bestFor: "Total beginners in the US who want the simplest start",
@@ -79,6 +82,7 @@ export const banks: Bank[] = [
       selfCustodyFriendly: true,
       lightning: true,
       debitCard: false,
+      mortgage: false,
       noKYCHassle: true,
     },
     bestFor: "People who want low fees and Lightning payments",
@@ -98,6 +102,7 @@ export const banks: Bank[] = [
       selfCustodyFriendly: true,
       lightning: true,
       debitCard: false,
+      mortgage: false,
       noKYCHassle: true,
     },
     bestFor: "US savers who want a trustworthy Bitcoin-only home",
@@ -117,6 +122,7 @@ export const banks: Bank[] = [
       selfCustodyFriendly: true,
       lightning: false,
       debitCard: false,
+      mortgage: false,
       noKYCHassle: true,
     },
     bestFor: "Set-and-forget recurring Bitcoin savings",
@@ -136,6 +142,7 @@ export const banks: Bank[] = [
       selfCustodyFriendly: true,
       lightning: false,
       debitCard: true,
+      mortgage: true,
       noKYCHassle: false,
     },
     bestFor: "People who want to earn, borrow, and spend using Bitcoin as collateral",
@@ -155,6 +162,7 @@ export const banks: Bank[] = [
       selfCustodyFriendly: true,
       lightning: false,
       debitCard: true,
+      mortgage: false,
       noKYCHassle: true,
     },
     bestFor: "Europeans wanting banking + crypto in one app",
@@ -174,6 +182,7 @@ export const banks: Bank[] = [
       selfCustodyFriendly: true,
       lightning: false,
       debitCard: true,
+      mortgage: false,
       noKYCHassle: true,
     },
     bestFor: "UK users linking to an exchange",
@@ -193,6 +202,7 @@ export const banks: Bank[] = [
       selfCustodyFriendly: true,
       lightning: false,
       debitCard: true,
+      mortgage: false,
       noKYCHassle: true,
     },
     bestFor: "International transfers to fund exchanges",
@@ -212,6 +222,7 @@ export const banks: Bank[] = [
       selfCustodyFriendly: true,
       lightning: false,
       debitCard: true,
+      mortgage: false,
       noKYCHassle: false,
     },
     bestFor: "EU users exploring native crypto banking",
@@ -231,6 +242,7 @@ export const banks: Bank[] = [
       selfCustodyFriendly: true,
       lightning: true,
       debitCard: true,
+      mortgage: false,
       noKYCHassle: false,
     },
     bestFor: "Those wanting a full bank built around Bitcoin",
@@ -250,6 +262,7 @@ export const banks: Bank[] = [
       selfCustodyFriendly: true,
       lightning: false,
       debitCard: false,
+      mortgage: false,
       noKYCHassle: true,
     },
     bestFor: "Europeans who want Bitcoin sent to self-custody",
@@ -269,6 +282,7 @@ export const banks: Bank[] = [
       selfCustodyFriendly: true,
       lightning: true,
       debitCard: false,
+      mortgage: false,
       noKYCHassle: true,
     },
     bestFor: "Canadians who insist on self-custody",
@@ -290,5 +304,6 @@ export const featureLabels: Record<keyof Bank["features"], string> = {
   selfCustodyFriendly: "Send to your own wallet",
   lightning: "Lightning support",
   debitCard: "Debit / spending card",
+  mortgage: "Bitcoin-backed mortgage",
   noKYCHassle: "Easy sign-up",
 };
