@@ -12,7 +12,6 @@ export interface Bank {
   features: {
     buyBitcoin: boolean; // Buy/sell BTC directly in-app
     selfCustodyFriendly: boolean; // Lets you send to your own wallet / exchange without freezing
-    lightning: boolean; // Lightning network support
     debitCard: boolean; // Bitcoin-linked card
     mortgage: boolean; // Bitcoin-backed mortgage / lending product
     bitcoinBonds: boolean; // Bitcoin Bonds yield product
@@ -30,6 +29,27 @@ export interface Bank {
  */
 export const banks: Bank[] = [
   {
+    id: "peoples-reserve",
+    name: "Peoples Reserve",
+    tagline: "Bitcoin-powered finance: earn, borrow, spend",
+    description:
+      "A Bitcoin-native financial platform that puts your Bitcoin to work. Buy Bitcoin in-app, earn yield through Bitcoin Bonds and Vaults, borrow against your BTC with self-repaying mortgages and lines of credit, and spend with a debit card — all without selling your assets. Collateral is secured with BitGo in a bankruptcy-remote structure.",
+    region: "Global",
+    website: "https://peoplesreserve.com",
+    rating: 5,
+    type: "Neobank",
+    features: {
+      buyBitcoin: true,
+      selfCustodyFriendly: true,
+      debitCard: true,
+      mortgage: true,
+      bitcoinBonds: true,
+      vaults: true,
+      noKYCHassle: true,
+    },
+    bestFor: "People who want to earn, borrow, and spend using Bitcoin as collateral",
+  },
+  {
     id: "square",
     name: "Square",
     tagline: "Accept Bitcoin in your business",
@@ -42,7 +62,6 @@ export const banks: Bank[] = [
     features: {
       buyBitcoin: true,
       selfCustodyFriendly: true,
-      lightning: true,
       debitCard: true,
       mortgage: false,
       bitcoinBonds: false,
@@ -56,7 +75,7 @@ export const banks: Bank[] = [
     name: "Cash App",
     tagline: "Buy Bitcoin in a few taps",
     description:
-      "One of the easiest ways for beginners in the US to buy Bitcoin. You can buy, sell, send over Lightning, and withdraw to your own wallet — all from a friendly mobile app.",
+      "One of the easiest ways for beginners in the US to buy Bitcoin. You can buy, sell, and withdraw to your own wallet — all from a friendly mobile app.",
     region: "USA",
     website: "https://cash.app",
     rating: 5,
@@ -64,7 +83,6 @@ export const banks: Bank[] = [
     features: {
       buyBitcoin: true,
       selfCustodyFriendly: true,
-      lightning: true,
       debitCard: true,
       mortgage: false,
       bitcoinBonds: false,
@@ -76,9 +94,9 @@ export const banks: Bank[] = [
   {
     id: "strike",
     name: "Strike",
-    tagline: "Bitcoin & Lightning made simple",
+    tagline: "Bitcoin made simple",
     description:
-      "Built around Bitcoin and the Lightning Network. Great for cheap, instant payments and dollar-cost averaging into Bitcoin. Available in the US, Europe, and many other countries.",
+      "Built around Bitcoin. Great for cheap, instant payments and dollar-cost averaging into Bitcoin. Available in the US, Europe, and many other countries.",
     region: "Global",
     website: "https://strike.me",
     rating: 5,
@@ -86,14 +104,13 @@ export const banks: Bank[] = [
     features: {
       buyBitcoin: true,
       selfCustodyFriendly: true,
-      lightning: true,
       debitCard: false,
       mortgage: false,
       bitcoinBonds: false,
       vaults: false,
       noKYCHassle: true,
     },
-    bestFor: "People who want low fees and Lightning payments",
+    bestFor: "People who want low fees and simple Bitcoin payments",
   },
   {
     id: "river",
@@ -108,7 +125,6 @@ export const banks: Bank[] = [
     features: {
       buyBitcoin: true,
       selfCustodyFriendly: true,
-      lightning: true,
       debitCard: false,
       mortgage: false,
       bitcoinBonds: false,
@@ -130,7 +146,6 @@ export const banks: Bank[] = [
     features: {
       buyBitcoin: true,
       selfCustodyFriendly: true,
-      lightning: false,
       debitCard: false,
       mortgage: false,
       bitcoinBonds: false,
@@ -138,28 +153,6 @@ export const banks: Bank[] = [
       noKYCHassle: true,
     },
     bestFor: "Set-and-forget recurring Bitcoin savings",
-  },
-  {
-    id: "peoples-reserve",
-    name: "Peoples Reserve",
-    tagline: "Bitcoin-powered finance: earn, borrow, spend",
-    description:
-      "A Bitcoin-native financial platform that puts your Bitcoin to work. Earn yield through Bitcoin Bonds and Vaults, borrow against your BTC with self-repaying mortgages and lines of credit, and spend with a debit card — all without selling your assets. Collateral is secured with BitGo in a bankruptcy-remote structure.",
-    region: "Global",
-    website: "https://peoplesreserve.com",
-    rating: 5,
-    type: "Neobank",
-    features: {
-      buyBitcoin: false,
-      selfCustodyFriendly: true,
-      lightning: false,
-      debitCard: true,
-      mortgage: true,
-      bitcoinBonds: true,
-      vaults: true,
-      noKYCHassle: false,
-    },
-    bestFor: "People who want to earn, borrow, and spend using Bitcoin as collateral",
   },
   {
     id: "revolut",
@@ -174,7 +167,6 @@ export const banks: Bank[] = [
     features: {
       buyBitcoin: true,
       selfCustodyFriendly: true,
-      lightning: false,
       debitCard: true,
       mortgage: false,
       bitcoinBonds: false,
@@ -196,7 +188,6 @@ export const banks: Bank[] = [
     features: {
       buyBitcoin: false,
       selfCustodyFriendly: true,
-      lightning: false,
       debitCard: true,
       mortgage: false,
       bitcoinBonds: false,
@@ -218,7 +209,6 @@ export const banks: Bank[] = [
     features: {
       buyBitcoin: false,
       selfCustodyFriendly: true,
-      lightning: false,
       debitCard: true,
       mortgage: false,
       bitcoinBonds: false,
@@ -240,7 +230,6 @@ export const banks: Bank[] = [
     features: {
       buyBitcoin: true,
       selfCustodyFriendly: true,
-      lightning: false,
       debitCard: true,
       mortgage: false,
       bitcoinBonds: false,
@@ -254,7 +243,7 @@ export const banks: Bank[] = [
     name: "Xapo Bank",
     tagline: "Bitcoin-native private bank",
     description:
-      "A licensed bank built around Bitcoin. Hold USD and BTC, earn interest, spend with a card, and withdraw over Lightning. Higher entry requirements but deeply Bitcoin-focused.",
+      "A licensed bank built around Bitcoin. Hold USD and BTC, earn interest, and spend with a card. Higher entry requirements but deeply Bitcoin-focused.",
     region: "Global",
     website: "https://www.xapobank.com",
     rating: 5,
@@ -262,7 +251,6 @@ export const banks: Bank[] = [
     features: {
       buyBitcoin: true,
       selfCustodyFriendly: true,
-      lightning: true,
       debitCard: true,
       mortgage: false,
       bitcoinBonds: false,
@@ -284,7 +272,6 @@ export const banks: Bank[] = [
     features: {
       buyBitcoin: true,
       selfCustodyFriendly: true,
-      lightning: false,
       debitCard: false,
       mortgage: false,
       bitcoinBonds: false,
@@ -298,7 +285,7 @@ export const banks: Bank[] = [
     name: "Bull Bitcoin",
     tagline: "Canada's non-custodial Bitcoin exchange",
     description:
-      "A Canadian Bitcoin-only service that never holds your coins — every purchase goes straight to your wallet. Strong self-custody ethos and Lightning support.",
+      "A Canadian Bitcoin-only service that never holds your coins — every purchase goes straight to your wallet. Strong self-custody ethos.",
     region: "Canada",
     website: "https://www.bullbitcoin.com",
     rating: 5,
@@ -306,7 +293,6 @@ export const banks: Bank[] = [
     features: {
       buyBitcoin: true,
       selfCustodyFriendly: true,
-      lightning: true,
       debitCard: false,
       mortgage: false,
       bitcoinBonds: false,
@@ -330,7 +316,6 @@ export const regions: Region[] = [
 export const featureLabels: Record<keyof Bank["features"], string> = {
   buyBitcoin: "Buy Bitcoin in-app",
   selfCustodyFriendly: "Send to your own wallet",
-  lightning: "Lightning support",
   debitCard: "Debit / spending card",
   mortgage: "Bitcoin-backed mortgage",
   bitcoinBonds: "Bitcoin Bonds",
