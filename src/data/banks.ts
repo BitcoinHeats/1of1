@@ -301,6 +301,27 @@ export const banks: Bank[] = [
     },
     bestFor: "Canadians who insist on self-custody",
   },
+  {
+    id: "bitgo",
+    name: "BitGo",
+    tagline: "Institutional-grade Bitcoin custody & banking",
+    description:
+      "An OCC federally chartered digital asset trust (BitGo Bank & Trust) providing qualified custody, wallet services, trading, and settlement since 2013. Their Go Account holds cash and crypto in one place, with regulated custody securing your Bitcoin at an institutional standard. The backbone trusted by major platforms and businesses worldwide.",
+    region: "Global",
+    website: "https://www.bitgo.com",
+    rating: 5,
+    type: "Bank",
+    features: {
+      buyBitcoin: true,
+      selfCustodyFriendly: true,
+      debitCard: false,
+      mortgage: false,
+      bitcoinBonds: false,
+      vaults: false,
+      noKYCHassle: false,
+    },
+    bestFor: "Institutions and businesses needing regulated Bitcoin custody",
+  },
 ];
 
 export const regions: Region[] = [
