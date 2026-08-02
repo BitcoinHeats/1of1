@@ -68,7 +68,7 @@ const Index = () => {
               name: "Which banks work well with Bitcoin?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Banks and apps like Cash App, Strike, River, Swan, Xapo Bank, and Relai are known to work well with Bitcoin. They let you buy Bitcoin, send it to your own wallet, or link to exchanges without freezing your account. Availability varies by country.",
+                text: "Banks and apps like Peoples Reserve, Cash App, Strike, River, Swan, Xapo Bank, and Relai are known to work well with Bitcoin. They let you buy Bitcoin, send it to your own wallet, or link to exchanges without freezing your account. Availability varies by country.",
               },
             },
             {

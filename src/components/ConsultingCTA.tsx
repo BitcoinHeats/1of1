@@ -6,7 +6,7 @@ const ZAPRITE_URL = "https://pay.zaprite.com/pl_1hOGF8dgST";
 const inclusions = [
   "Accept Bitcoin payments from your customers",
   "Set up self-custody for your business treasury",
-  "Lightning Network for instant, low-fee payments",
+  "Bitcoin-backed lending & mortgage strategies",
   "Avoid the banks that freeze crypto accounts",
 ];
 
