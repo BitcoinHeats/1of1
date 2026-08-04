@@ -1,6 +1,6 @@
 {
-  "name": "BanksforBitcoin.com",
-  "short_name": "BanksforBitcoin",
+  "name": "1of1.Digital",
+  "short_name": "1of1.Digital",
   "description": "A simple, beginner-friendly list of banks and apps that work well with Bitcoin.",
   "start_url": "/",
   "display": "standalone",
@@ -8,9 +8,10 @@
   "theme_color": "#F7931A",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "https://blossom.ditto.pub/d81a008bc0dc2c58c3c110a351fb3677da9d70b6ed4186c5bf435211cca0b55a.jpeg",
       "sizes": "any",
-      "type": "image/svg+xml"
+      "type": "image/jpeg",
+      "purpose": "any maskable"
     }
   ]
 }

@@ -75,24 +75,24 @@ const faqs = [
 
 const HowToBuyBitcoin = () => {
   useSeoMeta({
-    title: "How to Buy Your First Bitcoin — Step-by-Step Beginner Guide | BanksforBitcoin.com",
+    title: "How to Buy Your First Bitcoin — Step-by-Step Beginner Guide | 1of1.Digital",
     description:
       "A simple, jargon-free guide to buying your first Bitcoin. Learn how to pick an app, verify your identity, buy Bitcoin, and move it to your own wallet for self-custody.",
     ogTitle: "How to Buy Your First Bitcoin — Beginner Guide",
     ogDescription:
       "Step-by-step guide for total beginners: pick an app, buy Bitcoin, and take self-custody. No jargon.",
     ogType: "article",
-    ogUrl: "https://banksforbitcoin.com/how-to-buy-bitcoin",
-    ogImage: "https://banksforbitcoin.com/og-image.png",
+    ogUrl: "https://1of1.digital/how-to-buy-bitcoin",
+    ogImage: "https://1of1.digital/og-image.png",
     twitterCard: "summary_large_image",
     twitterTitle: "How to Buy Your First Bitcoin — Beginner Guide",
     twitterDescription:
       "Step-by-step guide for total beginners: pick an app, buy Bitcoin, and take self-custody.",
-    twitterImage: "https://banksforbitcoin.com/og-image.png",
+    twitterImage: "https://1of1.digital/og-image.png",
   });
 
   useHead({
-    link: [{ rel: "canonical", href: "https://banksforbitcoin.com/how-to-buy-bitcoin" }],
+    link: [{ rel: "canonical", href: "https://1of1.digital/how-to-buy-bitcoin" }],
     script: [
       {
         type: "application/ld+json",
@@ -162,7 +162,7 @@ const HowToBuyBitcoin = () => {
           {/* Share buttons */}
           <div className="mt-6">
             <SocialShare
-              url="https://banksforbitcoin.com/how-to-buy-bitcoin"
+              url="https://1of1.digital/how-to-buy-bitcoin"
               title="How to Buy Your First Bitcoin — Beginner Guide"
             />
           </div>

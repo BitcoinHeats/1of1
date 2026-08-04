@@ -49,8 +49,7 @@ export function SiteHeader() {
           </div>
 
           <h1 className="mx-auto max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
-            Banks<span className="text-primary">for</span>Bitcoin
-            <span className="text-muted-foreground">.com</span>
+            1of1<span className="text-primary">.Digital</span>
           </h1>
           <p className="mx-auto mt-3 max-w-2xl text-base font-semibold uppercase tracking-[0.15em] text-primary sm:text-lg">
             Banks That Work Well With Bitcoin

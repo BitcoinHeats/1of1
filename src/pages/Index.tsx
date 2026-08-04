@@ -17,42 +17,42 @@ type Filter = "All" | Region;
 
 const Index = () => {
   useSeoMeta({
-    title: "BanksforBitcoin.com — Find Bitcoin-Friendly Banks (Beginner Guide)",
+    title: "1of1.Digital — Find Bitcoin-Friendly Banks (Beginner Guide)",
     description:
       "A simple, beginner-friendly list of banks and apps that work well with Bitcoin. Find where you can safely buy Bitcoin and link your account without getting frozen.",
-    ogTitle: "BanksforBitcoin.com — Banks That Work Well With Bitcoin",
+    ogTitle: "1of1.Digital — Banks That Work Well With Bitcoin",
     ogDescription:
       "A simple, beginner-friendly guide to banks and apps that let you buy Bitcoin without getting frozen.",
     ogType: "website",
-    ogUrl: "https://banksforbitcoin.com",
-    ogImage: "https://banksforbitcoin.com/og-image.png",
+    ogUrl: "https://1of1.digital",
+    ogImage: "https://1of1.digital/og-image.png",
     ogImageWidth: 1200,
     ogImageHeight: 630,
     ogImageType: "image/png",
-    ogImageAlt: "BanksforBitcoin.com — banks that work well with Bitcoin",
-    ogSiteName: "BanksforBitcoin.com",
+    ogImageAlt: "1of1.Digital — banks that work well with Bitcoin",
+    ogSiteName: "1of1.Digital",
     twitterCard: "summary_large_image",
-    twitterTitle: "BanksforBitcoin.com — Banks That Work Well With Bitcoin",
+    twitterTitle: "1of1.Digital — Banks That Work Well With Bitcoin",
     twitterDescription:
       "A simple, beginner-friendly guide to banks and apps that let you buy Bitcoin without getting frozen.",
-    twitterImage: "https://banksforbitcoin.com/og-image.png",
+    twitterImage: "https://1of1.digital/og-image.png",
   });
 
   useHead({
-    link: [{ rel: "canonical", href: "https://banksforbitcoin.com/" }],
+    link: [{ rel: "canonical", href: "https://1of1.digital/" }],
     script: [
       {
         type: "application/ld+json",
         innerHTML: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: "BanksforBitcoin.com",
-          url: "https://banksforbitcoin.com/",
+          name: "1of1.Digital",
+          url: "https://1of1.digital/",
           description:
             "A simple, beginner-friendly list of banks and apps that work well with Bitcoin.",
           potentialAction: {
             "@type": "SearchAction",
-            target: "https://banksforbitcoin.com/?q={search_term_string}",
+            target: "https://1of1.digital/?q={search_term_string}",
             "query-input": "required name=search_term_string",
           },
         }),
@@ -223,8 +223,8 @@ const Index = () => {
         {/* Share this site */}
         <section className="mx-auto mt-12 max-w-3xl text-center">
           <SocialShare
-            url="https://banksforbitcoin.com"
-            title="BanksforBitcoin.com — Banks That Work Well With Bitcoin"
+            url="https://1of1.digital"
+            title="1of1.Digital — Banks That Work Well With Bitcoin"
             className="justify-center"
           />
           <p className="mt-3 text-xs text-muted-foreground">
