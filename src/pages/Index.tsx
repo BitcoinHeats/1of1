@@ -80,7 +80,7 @@ const Index = () => {
               name: "What kind of services are listed here?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Payments and invoicing tools like Zaprite, automation platforms like Zapier, and — as the directory grows — banking, custody, identity, and communications services. Every entry is picked because it helps you stay self-sovereign and Bitcoin-native.",
+                text: "Payments and invoicing tools like Zaprite, automation platforms like Zapier and WorkFlow AI, sovereign finance like Peoples Reserve, and — as the directory grows — custody, identity, and communications services. Every entry is picked because it helps you stay self-sovereign and Bitcoin-native.",
               },
             },
             {

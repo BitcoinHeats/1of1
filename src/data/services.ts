@@ -3,12 +3,12 @@
  *
  * A growing directory of services that help people run a self-sovereign,
  * Bitcoin-native life and business. New categories and entries are added
- * over time — start with Payments and Automation.
+ * over time — currently spanning Payments, Automation, and Sovereign Finance.
  */
 export type ServiceCategory =
   | "Payments"
   | "Automation"
-  | "Banking"
+  | "Sovereign Finance"
   | "Custody"
   | "Identity"
   | "Communications";
@@ -47,6 +47,23 @@ export const services: Service[] = [
     ],
   },
   {
+    id: "workflow-ai",
+    name: "WorkFlow AI",
+    tagline: "AI automation audits & builds for operators",
+    description:
+      "A free AI audit that maps every workflow in your business, pinpoints where AI and automation save the most time and money, and then builds what it finds. Built by operators, for operators — start with a 30-minute alignment call and walk away with a written plan you own, no pitch. Turns the late-night admin and missed after-hours leads into automated systems that run 24/7.",
+    website: "https://workflwai.com/",
+    category: "Automation",
+    rating: 5,
+    badge: "New",
+    features: [
+      "Free workflow audit — plan yours to keep",
+      "AI lead response in under 4 minutes, 24/7",
+      "Builds on n8n, Make, Zapier, OpenAI & Anthropic",
+      "Works with the CRM you already run",
+    ],
+  },
+  {
     id: "zapier",
     name: "Zapier",
     tagline: "Automate the busywork across 7,000+ apps",
@@ -63,12 +80,29 @@ export const services: Service[] = [
       "Scales without headcount",
     ],
   },
+  {
+    id: "peoples-reserve",
+    name: "Peoples Reserve",
+    tagline: "Bitcoin-native finance: earn, borrow, spend",
+    description:
+      "A Bitcoin-native financial platform that puts your Bitcoin to work. Buy Bitcoin in-app, earn yield through Bitcoin Bonds and Vaults, borrow against your BTC with self-repaying mortgages and lines of credit, and spend with a debit card — all without selling your assets. Collateral is secured with BitGo in a bankruptcy-remote structure. Sovereign finance for people who want their Bitcoin to do more than sit still.",
+    website: "https://peoplesreserve.com",
+    category: "Sovereign Finance",
+    rating: 5,
+    badge: "Core",
+    features: [
+      "Buy Bitcoin in-app",
+      "Bitcoin Bonds & yield Vaults",
+      "Bitcoin-backed mortgages & credit lines",
+      "Spend with a debit card — no selling required",
+    ],
+  },
 ];
 
 export const categories: ServiceCategory[] = [
   "Payments",
   "Automation",
-  "Banking",
+  "Sovereign Finance",
   "Custody",
   "Identity",
   "Communications",
