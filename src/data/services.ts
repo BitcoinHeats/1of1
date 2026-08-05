@@ -3,13 +3,15 @@
  *
  * A growing directory of services that help people run a self-sovereign,
  * Bitcoin-native life and business. New categories and entries are added
- * over time — currently spanning AI, Payments, Automation, and Sovereign Finance.
+ * over time — currently spanning AI, Payments, Automation, Sovereign Finance,
+ * and Energy.
  */
 export type ServiceCategory =
   | "AI"
   | "Payments"
   | "Automation"
   | "Sovereign Finance"
+  | "Energy"
   | "Custody"
   | "Identity"
   | "Communications";
@@ -115,6 +117,23 @@ export const services: Service[] = [
       "Spend with a debit card — no selling required",
     ],
   },
+  {
+    id: "bitcoin-heats",
+    name: "Bitcoin Heats",
+    tagline: "Mine Bitcoin. Heat your home. Payoff your mortgage.",
+    description:
+      "High-efficiency heating systems that turn compute energy into heat and Bitcoin. While keeping your home or business warm, Bitcoin Heats' solar-hydronic units act as Bitcoin-enabled nodes — earning you mining income and cutting your energy bill at the same time. Complete installation packages for residential and commercial, AI-enhanced monitoring, and a DePin architecture that rewards node operators with Bitcoin. Serving the United States and Canada. Pay with Bitcoin.",
+    website: "https://bitcoinheats.com",
+    category: "Energy",
+    rating: 5,
+    badge: "New",
+    features: [
+      "Bitcoin mining that heats your home",
+      "Solar-hydronic, carbon-neutral design",
+      "AI-driven 24/7 performance monitoring",
+      "Residential & commercial installation",
+    ],
+  },
 ];
 
 export const categories: ServiceCategory[] = [
@@ -122,6 +141,7 @@ export const categories: ServiceCategory[] = [
   "Payments",
   "Automation",
   "Sovereign Finance",
+  "Energy",
   "Custody",
   "Identity",
   "Communications",
