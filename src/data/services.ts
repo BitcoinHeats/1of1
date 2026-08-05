@@ -3,9 +3,10 @@
  *
  * A growing directory of services that help people run a self-sovereign,
  * Bitcoin-native life and business. New categories and entries are added
- * over time — currently spanning Payments, Automation, and Sovereign Finance.
+ * over time — currently spanning AI, Payments, Automation, and Sovereign Finance.
  */
 export type ServiceCategory =
+  | "AI"
   | "Payments"
   | "Automation"
   | "Sovereign Finance"
@@ -29,6 +30,23 @@ export interface Service {
 }
 
 export const services: Service[] = [
+  {
+    id: "venice-ai",
+    name: "Venice.ai",
+    tagline: "Private, uncensored AI — your data stays yours",
+    description:
+      "Access leading AI models for text, image, video, audio, and code — all private or anonymized. While others log and analyze your prompts, Venice strips identifying metadata, offers zero-data-retention open-source models, and even hardware-secured TEE and end-to-end encrypted tiers. Uncensored by design, with an OpenAI-compatible API that plugs into any agent stack. Sovereign AI for people who refuse to hand their thoughts to a corporate server.",
+    website: "https://venice.ai",
+    category: "AI",
+    rating: 5,
+    badge: "Core",
+    features: [
+      "Uncensored text, image, video & audio AI",
+      "Zero data retention on private models",
+      "End-to-end encrypted + TEE privacy tiers",
+      "OpenAI-compatible API for agents",
+    ],
+  },
   {
     id: "zaprite",
     name: "Zaprite",
@@ -100,6 +118,7 @@ export const services: Service[] = [
 ];
 
 export const categories: ServiceCategory[] = [
+  "AI",
   "Payments",
   "Automation",
   "Sovereign Finance",
