@@ -1,16 +1,16 @@
 {
-  "name": "1of1.Digital",
+  "name": "1of1.Digital — Sovereign by Design",
   "short_name": "1of1.Digital",
-  "description": "A simple, beginner-friendly list of banks and apps that work well with Bitcoin.",
+  "description": "A curated directory of services and tools for a self-sovereign, Bitcoin-native life and business.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#F7931A",
+  "background_color": "#0a1024",
+  "theme_color": "#0a1024",
   "icons": [
     {
-      "src": "https://blossom.ditto.pub/d81a008bc0dc2c58c3c110a351fb3677da9d70b6ed4186c5bf435211cca0b55a.jpeg",
+      "src": "/favicon.svg",
       "sizes": "any",
-      "type": "image/jpeg",
+      "type": "image/svg+xml",
       "purpose": "any maskable"
     }
   ]

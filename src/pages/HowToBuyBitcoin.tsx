@@ -21,7 +21,7 @@ const steps = [
   {
     icon: Search,
     title: "Pick a Bitcoin-friendly app",
-    body: "Choose a bank or app from our list that's available in your country. For total beginners, Cash App (US), Strike (global), or Relai (Europe) are great starting points — they're simple and let you buy in minutes.",
+    body: "Choose a Bitcoin-friendly app available in your country. For total beginners, Cash App (US), Strike (global), or Relai (Europe) are great starting points — they're simple and let you buy in minutes.",
   },
   {
     icon: BadgeCheck,
@@ -77,15 +77,15 @@ const HowToBuyBitcoin = () => {
   useSeoMeta({
     title: "How to Buy Your First Bitcoin — Step-by-Step Beginner Guide | 1of1.Digital",
     description:
-      "A simple, jargon-free guide to buying your first Bitcoin. Learn how to pick an app, verify your identity, buy Bitcoin, and move it to your own wallet for self-custody.",
-    ogTitle: "How to Buy Your First Bitcoin — Beginner Guide",
+      "A simple, jargon-free guide to buying your first Bitcoin and taking self-custody. Learn how to pick an app, verify your identity, buy Bitcoin, and move it to a wallet only you control.",
+    ogTitle: "How to Buy Your First Bitcoin — Sovereign by Design",
     ogDescription:
       "Step-by-step guide for total beginners: pick an app, buy Bitcoin, and take self-custody. No jargon.",
     ogType: "article",
     ogUrl: "https://1of1.digital/how-to-buy-bitcoin",
     ogImage: "https://1of1.digital/og-image.png",
     twitterCard: "summary_large_image",
-    twitterTitle: "How to Buy Your First Bitcoin — Beginner Guide",
+    twitterTitle: "How to Buy Your First Bitcoin — Sovereign by Design",
     twitterDescription:
       "Step-by-step guide for total beginners: pick an app, buy Bitcoin, and take self-custody.",
     twitterImage: "https://1of1.digital/og-image.png",
@@ -135,18 +135,18 @@ const HowToBuyBitcoin = () => {
           {/* Back link */}
           <Link
             to="/"
-            className="inline-flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+            className="inline-flex items-center gap-1 text-sm font-medium text-muted-foreground transition-colors hover:text-royal"
           >
-            ← Back to all banks
+            ← Back to all services
           </Link>
 
           {/* Title */}
           <header className="mt-6">
-            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary">
+            <div className="inline-flex items-center gap-2 rounded-full border border-royal/40 bg-royal/10 px-3 py-1 font-mono text-xs font-semibold uppercase tracking-wider text-royal">
               <Bitcoin className="h-3.5 w-3.5" />
               Beginner Guide
             </div>
-            <h1 className="mt-4 text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl">
+            <h1 className="chrome-text-royal font-display mt-4 text-3xl font-bold tracking-wide sm:text-4xl md:text-5xl">
               How to Buy Your First Bitcoin
             </h1>
             <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
@@ -154,7 +154,7 @@ const HowToBuyBitcoin = () => {
               walks you through every step — from picking an app to holding
               Bitcoin that only <em>you</em> control. No jargon, no hype.
             </p>
-            <p className="mt-3 text-sm text-muted-foreground">
+            <p className="mt-3 font-mono text-xs uppercase tracking-wider text-muted-foreground">
               Time to complete: about 30 minutes · Difficulty: beginner
             </p>
           </header>
@@ -183,7 +183,7 @@ const HowToBuyBitcoin = () => {
 
           {/* Steps */}
           <section className="mt-10">
-            <h2 className="text-2xl font-bold tracking-tight">The 6 steps</h2>
+            <h2 className="font-display text-2xl font-bold tracking-wide">The 6 steps</h2>
             <ol className="mt-6 space-y-5">
               {steps.map((step, i) => (
                 <li key={step.title}>
@@ -230,7 +230,7 @@ const HowToBuyBitcoin = () => {
 
           {/* FAQ */}
           <section className="mt-12">
-            <h2 className="text-2xl font-bold tracking-tight">
+            <h2 className="font-display text-2xl font-bold tracking-wide">
               Common questions
             </h2>
             <div className="mt-6 space-y-4">
@@ -247,16 +247,19 @@ const HowToBuyBitcoin = () => {
             </div>
           </section>
 
-          {/* CTA back to banks */}
-          <Card className="mt-12 text-center border-primary/30">
-            <CardContent className="py-8 px-6">
-              <h2 className="text-xl font-bold">Ready to pick your app?</h2>
+          {/* CTA back to services */}
+          <Card className="mt-12 text-center border-royal/30">
+            <CardContent className="px-6 py-8">
+              <h2 className="font-display text-xl font-bold tracking-wide">
+                Ready to take control?
+              </h2>
               <p className="mt-2 text-sm text-muted-foreground">
-                Browse our hand-picked list of Bitcoin-friendly banks and apps.
+                Explore our directory of services for a self-sovereign,
+                Bitcoin-native life.
               </p>
               <Button asChild size="lg" className="mt-5 font-semibold">
                 <Link to="/">
-                  Find a bank for Bitcoin
+                  Explore sovereign services
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
