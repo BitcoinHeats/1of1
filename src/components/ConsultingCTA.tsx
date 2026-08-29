@@ -38,7 +38,7 @@ export function ConsultingCTA() {
             </h2>
 
             <p className="mt-3 text-sm leading-relaxed text-foreground/80 sm:text-base">
-              We'll guide you step-by-step — from accepting your first Bitcoin
+              We'll guide you step-by-step, from accepting your first Bitcoin
               payment to automating your workflow and securing your treasury.
               Book time with us and we'll handle the hard parts so you don't
               have to.

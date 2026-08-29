@@ -21,7 +21,7 @@ const steps = [
   {
     icon: Search,
     title: "Pick a Bitcoin-friendly app",
-    body: "Choose a Bitcoin-friendly app available in your country. For total beginners, Cash App (US), Strike (global), or Relai (Europe) are great starting points — they're simple and let you buy in minutes.",
+    body: "Choose a Bitcoin-friendly app available in your country. For total beginners, Cash App (US), Strike (global), or Relai (Europe) are great starting points. They're simple and let you buy in minutes.",
   },
   {
     icon: BadgeCheck,
@@ -31,12 +31,12 @@ const steps = [
   {
     icon: Banknote,
     title: "Deposit some money",
-    body: "Link your bank account or debit card and transfer in a small amount to start — maybe $20–$50. You don't need a lot to learn how it all works. Some apps also let you set up automatic recurring buys.",
+    body: "Link your bank account or debit card and transfer in a small amount to start, maybe $20 to $50. You don't need a lot to learn how it all works. Some apps also let you set up automatic recurring buys.",
   },
   {
     icon: Bitcoin,
     title: "Buy your first Bitcoin",
-    body: "Place a buy order for the amount you want. The app shows you the price and any fees upfront. Once confirmed, you'll see your Bitcoin balance appear — congratulations, you now own Bitcoin!",
+    body: "Place a buy order for the amount you want. The app shows you the price and any fees upfront. Once confirmed, you'll see your Bitcoin balance appear. Congratulations, you now own Bitcoin!",
   },
   {
     icon: Wallet,
@@ -46,18 +46,18 @@ const steps = [
   {
     icon: ShieldCheck,
     title: "Protect your recovery phrase",
-    body: "When you set up your own wallet, you'll get a recovery phrase (usually 12 or 24 words). This IS your Bitcoin — anyone with these words can take your funds. Write it down on paper, keep it offline, and never share it with anyone.",
+    body: "When you set up your own wallet, you'll get a recovery phrase (usually 12 or 24 words). This IS your Bitcoin. Anyone with these words can take your funds. Write it down on paper, keep it offline, and never share it with anyone.",
   },
 ];
 
 const faqs = [
   {
     q: "How much Bitcoin should I buy to start?",
-    a: "Start small — an amount you're comfortable learning with, like $20–$50. The goal at first is to understand the process, not to invest heavily. Many people then set up small automatic recurring buys to build savings over time.",
+    a: "Start small, an amount you're comfortable learning with, like $20 to $50. The goal at first is to understand the process, not to invest heavily. Many people then set up small automatic recurring buys to build savings over time.",
   },
   {
     q: "Do I have to buy a whole Bitcoin?",
-    a: "No. Bitcoin is divisible into 100 million smaller units called 'satoshis' (or 'sats'). You can buy any amount — even $5 worth. One Bitcoin is currently worth tens of thousands of dollars, but you can own a fraction.",
+    a: "No. Bitcoin is divisible into 100 million smaller units called 'satoshis' (or 'sats'). You can buy any amount, even $5 worth. One Bitcoin is currently worth tens of thousands of dollars, but you can own a fraction.",
   },
   {
     q: "What are the fees?",
@@ -65,27 +65,27 @@ const faqs = [
   },
   {
     q: "Is it safe?",
-    a: "Bitcoin itself is very secure, but the risk is in how you store it. Leaving Bitcoin on an app means you trust that company. Moving it to your own wallet (self-custody) and protecting your recovery phrase is the safest approach — but it means the responsibility is yours.",
+    a: "Bitcoin itself is very secure, but the risk is in how you store it. Leaving Bitcoin on an app means you trust that company. Moving it to your own wallet (self-custody) and protecting your recovery phrase is the safest approach, but it means the responsibility is yours.",
   },
   {
     q: "What if I lose my phone or the app shuts down?",
-    a: "If your Bitcoin is on an app and the app disappears, you could lose access. This is why self-custody matters — with your own wallet, your recovery phrase lets you restore your funds on any compatible wallet, anywhere.",
+    a: "If your Bitcoin is on an app and the app disappears, you could lose access. This is why self-custody matters. With your own wallet, your recovery phrase lets you restore your funds on any compatible wallet, anywhere.",
   },
 ];
 
 const HowToBuyBitcoin = () => {
   useSeoMeta({
-    title: "How to Buy Your First Bitcoin — Step-by-Step Beginner Guide | 1of1.Digital",
+    title: "How to Buy Your First Bitcoin | Step-by-Step Beginner Guide | 1of1.Digital",
     description:
       "A simple, jargon-free guide to buying your first Bitcoin and taking self-custody. Learn how to pick an app, verify your identity, buy Bitcoin, and move it to a wallet only you control.",
-    ogTitle: "How to Buy Your First Bitcoin — Sovereign by Design",
+    ogTitle: "How to Buy Your First Bitcoin | Sovereign by Design",
     ogDescription:
       "Step-by-step guide for total beginners: pick an app, buy Bitcoin, and take self-custody. No jargon.",
     ogType: "article",
     ogUrl: "https://1of1.digital/how-to-buy-bitcoin",
     ogImage: "https://1of1.digital/og-image.png",
     twitterCard: "summary_large_image",
-    twitterTitle: "How to Buy Your First Bitcoin — Sovereign by Design",
+    twitterTitle: "How to Buy Your First Bitcoin | Sovereign by Design",
     twitterDescription:
       "Step-by-step guide for total beginners: pick an app, buy Bitcoin, and take self-custody.",
     twitterImage: "https://1of1.digital/og-image.png",
@@ -151,7 +151,7 @@ const HowToBuyBitcoin = () => {
             </h1>
             <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
               Never bought Bitcoin before? No problem. This plain-English guide
-              walks you through every step — from picking an app to holding
+              walks you through every step, from picking an app to holding
               Bitcoin that only <em>you</em> control. No jargon, no hype.
             </p>
             <p className="mt-3 font-mono text-xs uppercase tracking-wider text-muted-foreground">
@@ -163,7 +163,7 @@ const HowToBuyBitcoin = () => {
           <div className="mt-6">
             <SocialShare
               url="https://1of1.digital/how-to-buy-bitcoin"
-              title="How to Buy Your First Bitcoin — Beginner Guide"
+              title="How to Buy Your First Bitcoin | Beginner Guide"
             />
           </div>
 
@@ -173,7 +173,7 @@ const HowToBuyBitcoin = () => {
               <AlertTriangle className="h-5 w-5 shrink-0 text-amber-600 dark:text-amber-500" />
               <p className="text-sm text-foreground/80">
                 <span className="font-semibold">Quick reality check:</span>{" "}
-                Bitcoin's price goes up and down — sometimes a lot. Only put in
+                Bitcoin's price goes up and down, sometimes a lot. Only put in
                 money you can afford to leave there for years, and never invest
                 more than you can afford to lose. This guide is educational, not
                 financial advice.
@@ -219,7 +219,7 @@ const HowToBuyBitcoin = () => {
               <Lightbulb className="h-5 w-5 shrink-0 text-primary" />
               <p className="text-sm text-foreground/80">
                 <span className="font-semibold">Pro tip:</span> Many apps let you
-                set up <span className="font-semibold">automatic recurring buys</span> —
+                set up <span className="font-semibold">automatic recurring buys</span>,
                 for example, $25 every week. This is called "dollar-cost
                 averaging" and it removes the stress of trying to time the
                 market. It's how a lot of long-term Bitcoin savers build their

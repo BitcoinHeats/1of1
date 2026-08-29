@@ -21,10 +21,10 @@ type Filter = "All" | ServiceCategory;
 
 const Index = () => {
   useSeoMeta({
-    title: "1of1.Digital — Sovereign by Design | Services for a Self-Sovereign Life",
+    title: "1of1.Digital | Sovereign by Design | Services for a Self-Sovereign Life",
     description:
-      "A curated directory of services and tools for a self-sovereign, Bitcoin-native life and business — payments, automation, custody, and more. Chosen for people who refuse to hand control to anyone else.",
-    ogTitle: "1of1.Digital — Sovereign by Design",
+      "A curated directory of services and tools for a self-sovereign, Bitcoin-native life and business: payments, automation, custody, and more. Chosen for people who refuse to hand control to anyone else.",
+    ogTitle: "1of1.Digital | Sovereign by Design",
     ogDescription:
       "A curated directory of services and tools for a self-sovereign, Bitcoin-native life and business.",
     ogType: "website",
@@ -33,10 +33,10 @@ const Index = () => {
     ogImageWidth: 1200,
     ogImageHeight: 630,
     ogImageType: "image/png",
-    ogImageAlt: "1of1.Digital — Sovereign by Design",
+    ogImageAlt: "1of1.Digital | Sovereign by Design",
     ogSiteName: "1of1.Digital",
     twitterCard: "summary_large_image",
-    twitterTitle: "1of1.Digital — Sovereign by Design",
+    twitterTitle: "1of1.Digital | Sovereign by Design",
     twitterDescription:
       "A curated directory of services and tools for a self-sovereign, Bitcoin-native life and business.",
     twitterImage: "https://1of1.digital/og-image.png",
@@ -50,7 +50,7 @@ const Index = () => {
         innerHTML: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: "1of1.Digital — Sovereign by Design",
+          name: "1of1.Digital | Sovereign by Design",
           url: "https://1of1.digital/",
           description:
             "A curated directory of services and tools for a self-sovereign, Bitcoin-native life and business.",
@@ -72,7 +72,7 @@ const Index = () => {
               name: "What does 'Sovereign by Design' mean?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "It means choosing tools and services that keep you in control — your money, your data, your time. Instead of handing custody or decisions to a third party, you hold your own keys, accept payments to your own wallets, and automate your own workflows. 1of1.Digital curates the services that make that possible.",
+                text: "It means choosing tools and services that keep you in control: your money, your data, your time. Instead of handing custody or decisions to a third party, you hold your own keys, accept payments to your own wallets, and automate your own workflows. 1of1.Digital curates the services that make that possible.",
               },
             },
             {
@@ -80,7 +80,7 @@ const Index = () => {
               name: "What kind of services are listed here?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Private AI like Venice.ai, payments and invoicing tools like Zaprite, automation platforms like WorkFlow AI and Zapier, sovereign finance like Peoples Reserve, Bitcoin mining-heating systems like Bitcoin Heats, and — as the directory grows — custody, identity, and communications services. Every entry is picked because it helps you stay self-sovereign and Bitcoin-native.",
+                text: "Private AI like Venice.ai, payments and invoicing tools like Zaprite, automation platforms like WorkFlow AI and Zapier, sovereign finance like Peoples Reserve, Bitcoin mining-heating systems like Bitcoin Heats, and as the directory grows, custody, identity, and communications services. Every entry is picked because it helps you stay self-sovereign and Bitcoin-native.",
               },
             },
             {
@@ -204,14 +204,14 @@ const Index = () => {
           </Card>
         )}
 
-        {/* Roadmap — categories coming as we build this out */}
+        {/* Roadmap: categories coming as we build this out */}
         {roadmapCategories.length > 0 && (
           <section className="mx-auto mt-12 max-w-3xl">
             <div className="rounded-xl border border-dashed border-border/70 bg-card/40 p-5">
               <div className="flex items-center gap-2">
                 <Plus className="h-4 w-4 text-royal" />
                 <h2 className="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-                  On the roadmap — more as we build this out
+                  On the roadmap: more as we build this out
                 </h2>
               </div>
               <div className="mt-3 flex flex-wrap gap-2">
@@ -241,7 +241,7 @@ const Index = () => {
               <p className="mb-4 text-sm leading-relaxed text-foreground/80">
                 Sovereignty starts with holding your own keys. Our step-by-step
                 guide walks you through buying your first Bitcoin and moving it
-                to a wallet only you control — explained in plain English, no
+                to a wallet only you control, explained in plain English, no
                 jargon.
               </p>
               <Button asChild className="font-semibold">
@@ -261,7 +261,7 @@ const Index = () => {
         <section className="mx-auto mt-12 max-w-3xl text-center">
           <SocialShare
             url="https://1of1.digital"
-            title="1of1.Digital — Sovereign by Design"
+            title="1of1.Digital | Sovereign by Design"
             className="justify-center"
           />
           <p className="mt-3 text-xs text-muted-foreground">

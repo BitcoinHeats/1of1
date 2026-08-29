@@ -64,7 +64,7 @@ export function SiteHeader() {
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
             A curated directory of services and tools for a self-sovereign,
             Bitcoin-native life and business. Payments, automation, custody, and
-            more — chosen for people who refuse to hand control to anyone else.
+            more, chosen for people who refuse to hand control to anyone else.
           </p>
         </div>
       </header>

@@ -17,7 +17,7 @@ export function SiteFooter() {
             </span>{" "}
             An educational directory of services we believe support a
             self-sovereign life. Policies, availability, and features change
-            often — always do your own research before signing up or moving
+            often, so always do your own research before signing up or moving
             funds.
           </p>
 

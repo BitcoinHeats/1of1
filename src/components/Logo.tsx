@@ -7,7 +7,7 @@ interface LogoProps {
 }
 
 /**
- * Hexagonal "sovereign" mark — inline SVG, royal blue frame + scarlet node.
+ * Hexagonal "sovereign" mark: inline SVG, royal blue frame + scarlet node.
  * No external image; scales crisply at any size.
  */
 export function LogoMark({ className }: { className?: string }) {
@@ -55,7 +55,7 @@ export function LogoMark({ className }: { className?: string }) {
 }
 
 /**
- * Brand lockup for 1of1.Digital — Sovereign by Design.
+ * Brand lockup for 1of1.Digital: Sovereign by Design.
  * Chrome wordmark paired with the hex mark.
  */
 export function Logo({ className, iconOnly = false }: LogoProps) {
